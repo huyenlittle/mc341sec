@@ -1,0 +1,168 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgba(100, 149, 237, .5);
+  box-sizing: border-box;
+  /* background-image: url("https://cdn.glitch.com/ef0ea69b-51bb-41e8-9cdb-57e2804584c4%2Fbg.png?v=1618987119581");
+   background-repeat: repeat; */
+}
+
+/* Header */
+.intro {
+  height: 100vh;
+}
+
+.header {
+    height: 80vh;
+}
+
+h1, h2 {
+  font-family: 'Concert One', cursive;
+  text-align: center;
+  color: cornflowerblue;  
+}
+
+
+/* Scrolling button */
+
+.mouse {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font-family: 'Concert One', cursive;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.mouse a {
+  text-decoration: none;
+}
+.mouse span {
+  font-size: ;
+}
+
+.mouse a:visited {
+  text-decoration: none;
+}
+
+.mouse a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+.mouse a:active {
+  text-decoration: none;
+}
+
+
+/* Text Animation*/
+.text {
+  font-size: 90rem;
+}
+
+svg {
+  background-size: 6em 100%;
+  font: 90rem 'Concert One';
+}
+
+.text-1 {
+  fill: none;
+  stroke: cornflowerblue;
+  stroke-dasharray: 90% 100%;
+  stroke-width: 30px;
+  -webkit-animation: stroke-offset 7s infinite linear;
+          animation: stroke-offset 2s infinite linear;
+}
+.text-1:nth-child(1) {
+  stroke: rgba(100, 149, 237, .2);
+  stroke-dashoffset: 0%;
+}
+.text-1:nth-child(2) {
+  stroke: rgba(100, 149, 237, .4);
+  stroke-dashoffset: 50%;
+}
+.text-1:nth-child(3) {
+  stroke: rgba(100, 149, 237, .6);
+  stroke-dashoffset: 70%;
+}
+.wtext-1:nth-child(4) {
+  stroke: rgba(100, 149, 237, .1);
+  stroke-dashoffset: 90%;
+}
+.text-1:nth-child(5) {
+  stroke: rgba(100, 149, 237, .2);
+  stroke-dashoffset: 100%;
+}
+
+@-webkit-keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 100% 50% ;
+  }
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -25%;
+    stroke-dasharray: -50% -100%;
+  }
+}
+
+.word {
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 5%;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    grid-area: title;
+    font-size: 2rem;
+ 
+}
+
+
+/* Cards */
+.card {
+  border: none;
+  background-color: rgba(100, 149, 237, .2)!important;
+}
+
+.card-title {
+  color: cornflowerblue;
+  font-family: 'Concert One', cursive;
+}
+
+.card-text {
+  color: #000;
+}
+.card-header {
+  color: cornflowerblue;
+  font-family: 'Concert One', cursive;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  color: cornflowerblue;
+  font-family: 'Concert One', cursive;
+  padding-top: 5%;
+}
